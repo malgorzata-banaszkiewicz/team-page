@@ -1,0 +1,14 @@
+.main-footer {
+	margin: rem(200) 0 rem(20);
+	width: 100%;
+	font-family: $font-montserrat;
+	&__owner {
+		color: $color-silver;
+		@include font(14, 17);
+		text-align: center;
+		&--name {
+			font-weight: $font-weight-bold;
+			color: $color-silver;
+		}
+	}
+}
