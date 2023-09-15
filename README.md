@@ -6,7 +6,7 @@ Run:
 npm install
 ```
 
-## Preview a project
+## View a project
 
 Simply run:
 
