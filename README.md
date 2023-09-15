@@ -1,2 +1,19 @@
-# team-page
-devchallenges.io solution for a team page with nice layout for presenting company employees.
+### Install dependencies
+
+Run:
+
+```
+npm install
+```
+
+## Working on a project
+
+Simply run:
+
+```
+npm run dev
+```
+
+That will open project with live reloading on http://localhost:3000/
+
+Project from devChallenges.io showing a page that might be used to introduce members of a work team. I had a lot of fun trying to place all the pictures and their descriptions in the right way. The effect is elegant with a little twist. Check out how the website changes on different screen sizes!
