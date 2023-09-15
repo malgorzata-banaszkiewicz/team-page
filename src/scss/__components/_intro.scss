@@ -1,0 +1,23 @@
+.block-intro {
+	&__text {
+		@include media(">=lg") {
+			display: flex;
+			column-gap: 3%;
+		}
+	}
+	&__heading {
+		margin-bottom: rem(38);
+		@include media(">=lg") {
+			flex-basis: 50%;
+			max-width: 50%;
+			margin-bottom: 0;
+		}
+	}
+	&__teaser {
+		font-family: $font-poppins;
+		@include media(">=lg") {
+			flex-basis: 40%;
+			max-width: 40%;
+		}
+	}
+}

@@ -1,0 +1,18 @@
+p {
+	@include font(14, 21);
+	@include media(">=lg") {
+		@include font(18, 27);
+	}
+}
+
+h1 {
+	@include font(36, 48, 700, -1.62);
+	color: $color-black;
+	margin-bottom: rem(8);
+}
+
+h2 {
+	text-transform: uppercase;
+	@include font(18, 27, 600);
+	margin-bottom: rem(8);
+}

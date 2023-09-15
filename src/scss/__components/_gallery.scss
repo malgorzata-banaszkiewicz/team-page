@@ -1,0 +1,61 @@
+.section-gallery {
+	&__employees {
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: flex-start;
+		@media (max-width: rem(358)) {
+			justify-content: center;
+		}
+	}
+	&__person {
+		display: flex;
+		max-width: 100%;
+		flex-basis: 100%;
+		justify-content: center;
+
+		@media (min-width: rem(358)) {
+			max-width: 50%;
+			flex-basis: 50%;
+		}
+		@include media(">=xxl") {
+			flex-basis: 33.33%;
+			max-width: 33.33%;
+		}
+		@include media(">=xxxl") {
+			flex-basis: 25%;
+			max-width: 25%;
+		}
+		&:nth-child(even) {
+			margin-top: rem(48);
+			@include media(">=lg") {
+				margin-top: rem(99);
+			}
+		}
+	}
+	&__photo {
+		object-fit: cover;
+		height: rem(209);
+
+		@include media(">=lg") {
+			height: rem(341);
+		}
+	}
+	&__job-title {
+		display: block;
+		writing-mode: vertical-rl;
+		text-transform: uppercase;
+		@include font(10, 13);
+		@include media(">=lg") {
+			@include font(12, 16);
+			margin-left: rem(5);
+		}
+	}
+	&__name {
+		font-family: $font-poppins;
+		font-weight: $font-weight-medium;
+		@include font(14, 21);
+		@include media(">=lg") {
+			@include font(18, 27);
+		}
+	}
+}
